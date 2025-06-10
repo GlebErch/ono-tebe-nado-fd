@@ -1,0 +1,405 @@
+/* место для вашего кода */
+/* Заголовок 
+ Рекомендуемые имена классов
+      header — вся шапка;
+      header__menu — контейнер навигации;
+      header__links-list — список ссылок;
+      header__links-list-item — пункт списка ссылок;
+      header__links-list-item_no-bullit — этот класс может потребоваться, чтобы сделать ссылку без кружочка;
+      header__link — ссылка;
+      header__link_active — активная ссылка;
+      header__logo — контейнер логотипа;
+      header__logo-image — картинка с логотипом;
+      address — контейнер с адресом;
+      header__address — для выравнивания блока с адресом. В футере используется другое выравнивание. */
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
+  background-color: #fff;
+  width: 1100px;
+  height: 293px;
+}
+
+.header_menu {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+}
+
+.header_links-list {
+  display: flex;
+  margin-right: auto;
+  flex-direction: row;
+  list-style: circle;
+  margin-left: 50px;
+  margin-bottom: 5px;
+  gap: 33px;
+}
+
+.header_links-list-item_no-bullit {
+  list-style: none;
+}
+
+.header_link {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.header_logo {
+  justify-self: center;
+}
+
+.header_logo-image {
+  width: 148px;
+  height: 105px;
+}
+
+.address {
+  display: flex;
+  width: 240px;
+  height: 98px;
+  margin-right: 50px;
+  margin-bottom: 3px;
+  flex-direction: column;
+  justify-self: end;
+  flex-wrap: wrap;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 24px;
+}
+
+
+
+.main {
+  display: block;
+  background-color: #ffffff;
+}
+
+/* Обложка
+      Рекомендуемые имена классов
+       cover — вся секция;
+       overlay — полупрозрачный блок поверх секции;
+       cover__title — заголовок;
+       aligned-text, aligned-text_center и aligned-text_right — классы для выравнивания строк текста и превращения их в блочный элемент;
+       letter-spacing-extended — класс для управления межбуквенным расстоянием в местах, где есть эти акценты;
+       no-letter-spacing — класс для обнуления общего межбуквенного расстояния у последней буквы;
+       cover__description — контейнер для подзаголовка и кнопки;
+       cover__description-text — текст подзаголовка;
+       bet-button — кнопка «Сделать ставку». */
+
+.cover {
+  width: 1100px;
+  position: relative;
+  color: #ffffff;
+  min-height: 757px;
+  padding: 151px 50px 50px;
+}
+
+.cover_title {
+  position: relative;
+  font-family: "Raleway", sans-serif;
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 115%;
+  z-index: 1;
+  line-height: 1.37;
+}
+
+.cover-img {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.aligned-text {
+  display: block;
+}
+
+.aligned-text_center {
+  display: block;
+  text-align: center;
+  padding-left: 30px;
+}
+
+.aligned-text_right {
+  display: block;
+  text-align: right;
+  padding-right: 0px;
+}
+
+.letter-spacing-extended {
+  letter-spacing: 0.31em;
+}
+
+.no-letter-spacing {
+  margin-right: -0.31em;
+}
+
+.cover_description {
+  position: relative;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  align-items: center;
+  align-content: center;
+  z-index: 1;
+  margin-top: 94px;
+  word-spacing: 18.4px;
+}
+
+.cover_description-text {
+  font-family: "Raleway", sans-serif;
+  font-weight: normal;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+.bet-button {
+  /*position: relative;      */
+  margin-right: 2px;
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 22px;
+  text-transform: uppercase;
+  background-color: transparent;
+  padding: 12px;
+  width: 256px;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  opacity: 0.6;
+  background-color: #000;
+}
+
+/* Карточки
+        Рекомендуемые имена классов
+        lots — вся секция;
+        lots__heading — заголовок секции;
+        lots__card-list — список карточек;
+        lots__card-list-item — пункт списка карточек;
+        card-link — ссылка, обрамляющая карточку;
+        card — карточка;
+        card_type_film, card_type_book и card_type_picture — классы для фона каждой из карточек;
+        overlay — такой класс уже есть в вашем коде;
+        card__title — заголовок карточки;
+        card__text — текст карточки;
+        lots__look-more-link — ссылка «Посмотреть больше». */
+
+.lots {
+  padding: 180px 24px 118px;
+}
+
+.lots_heading {
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+  color: #000000;
+  margin-left: 40px;
+}
+
+.lots_card-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  gap: 25px;
+  margin-top: 27px;
+}
+
+.lots_card-list-item {
+  width: 334px;
+  min-height: 596px;
+  color: #ffffff;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  padding: 48px 40px;
+}
+
+.card-link {
+  height: 100%;
+}
+
+.card_title {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 120%;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #ffffff;
+  z-index: 1;
+}
+
+.card_text {
+  display: block;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  color: #ffffff;
+  z-index: 1;
+}
+
+.card_type_film {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card_type_book {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card_type_picture {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.lots_look-more-link {
+  display: block;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  margin-left: 40px;
+  margin-top: 30px;
+}
+
+/*Об аукционе 
+        Рекомендуемые имена классов
+         about — вся секция;
+         about__column — класс для колонок;
+         about__logo — контейнер с логотипом;
+         about__logo-image — изображение логотипа;
+         about__title — заголовок секции;
+         about__text — блок для текстов (параграфов) секции.*/
+
+.about {
+  display: grid;
+  grid-template-columns: 334px 1fr;
+  grid-template-rows: 283px 1fr;
+  background-color: #ffffff;
+  margin-left: 25px;
+  column-gap: 25px;
+}
+
+.about_logo {
+  grid-column: 1;
+  grid-row: 1;
+  background: #000000;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+  margin-top: 35px;
+}
+
+.about_logo-image {
+  width: 149px;
+  height: 114px;
+}
+
+.about_title {
+  grid-column: 2;
+  grid-row: 1;
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+  color: #000;
+  align-self: center;
+  padding-top: 35px;
+}
+
+.about_text {
+  grid-column: 2;
+  grid-row: 2;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  padding-right: 30px;
+}
+
+/*Подвал
+         Рекомендуемые имена классов
+          footer — подвал;
+          address — такой класс уже есть в вашей вёрстке, все вложенные элементы аналогичны;
+          footer__menu — блок навигации по списку ссылок. Рекомендуем вложить список в тег <nav> с этим классом;
+          footer__menu-list — список пунктов меню;
+          footer__menu-list-item — пункт списка меню;
+          footer__menu-link — ссылка меню;
+          footer__menu-link_active — активная ссылка меню (без подчёркивания);
+          footer__social-list — список ссылок на социальные сети. Можно не добавлять тег <nav>, потому что ссылки ведут на внешние ресурсы;
+          footer__social-list-item — пункт списка ссылок на социальные сети;
+          footer__social-link — ссылка на социальные сети;
+          footer__social-icon — иконка социальной сети. */
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: start;
+  justify-items: center;
+  background-color: #fff;
+  width: 1100px;
+  height: 293px;
+  margin-top: 182px;
+}
+
+.footer_menu {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+}
+
+.footer_menu-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  align-items: center;
+}
+
+.footer_menu-link_active {
+  list-style: none;
+}
+
+
+.footer .address {
+  width: 264px;
+  height: 98px;
+  margin-right: 50px;
+  margin-bottom: 3px;
+}
+
+
+.footer_social-list {
+  display: flex;
+  width: 240px;
+  height: 48px;
+  justify-content: space-between;
+  margin-left: 26px;
+}
+
+.footer_social-icon {
+  width: 48px;
+  height: 48px;
+}
