@@ -72,8 +72,6 @@
   line-height: 24px;
 }
 
-
-
 .main {
   display: block;
   background-color: #ffffff;
@@ -99,6 +97,8 @@
   padding: 151px 50px 50px;
   background-image: url("/images/cover.jpg");
   background-color: #000000;
+  background-size: cover;
+  background-position: center;
 }
 
 .cover_title {
@@ -106,16 +106,9 @@
   font-family: "Raleway", sans-serif;
   font-size: 100px;
   font-weight: 700;
-  text-transform:uppercase;
+  text-transform: uppercase;
   z-index: 1;
   line-height: 1.37;
-}
-
-.cover-img {
-  inset: 0;
-  height: 100%;
-  object-fit: cover;
-  z-index: 0;
 }
 
 .aligned-text {
@@ -161,7 +154,7 @@
 }
 
 .bet-button {
-  cursor: pointer
+  cursor: pointer;
   margin-right: 2px;
   border: 1px solid #fff;
   color: #fff;
@@ -259,7 +252,6 @@
 
 .card_type_film {
   background-image: url("/images/card-lot-01.jpg");
-
 }
 
 .card_type_book {
@@ -336,7 +328,6 @@
   padding-right: 30px;
 }
 
-
 .about_text p + p {
   margin-top: 1.2em;
 }
@@ -381,17 +372,14 @@
   list-style: none;
 }
 
-
 .footer .address {
   width: 264px;
   margin-right: 52px;
 }
- 
 
 .footer_social-list {
   display: flex;
   width: 240px;
-  height: 48px;
   justify-content: space-between;
   margin-left: 26px;
 }
